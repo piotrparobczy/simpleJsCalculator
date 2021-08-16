@@ -1,46 +1,45 @@
-button{
+button {
     height: 100px;
     width: 100px;
     font-size: 25px;
-}
-#eval{
+  }
+  #eval {
     height: 200px;
-}
-input{
+  }
+  input {
     height: 100px;
     width: 400px;
     font-size: 50px;
     text-align: right;
-}
-table{
+  }
+  table {
     margin: auto;
-
-}
-body{
-    background-image: url('images/background.jpeg')
-}
-
-
-table.transparent{
+  }
+  body {
+    background-image: url("images/background.jpeg");
+  }
+  
+  table.transparent {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     color: white;
-}
-
-.transparent button{
+  }
+  
+  .transparent button {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     color: white;
-}
-
-header .history{
+  }
+  
+  header .history {
     font-size: 25px;
-}
-
-header .result{
+  }
+  
+  header .result {
     font-size: 50px;
-}
-
-header{
+  }
+  
+  header {
     text-align: right;
-}
+  }
+  

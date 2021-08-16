@@ -1,30 +1,41 @@
-//function to add on each element of calculator
-function clickButtonOrPressKey(button,functionToRun) {
-    let key;
-    switch(button.value){
-        case "C":
-            // key =
-            break;
-        default:
-            key = button.value
-    }
-    let events = ['click',key]
-    events.forEach(evnt,function(evnt){
-        button.addEventListener(evnt,functionToRun(button))
-    })
+const resultDisplay = document.getElementById("result");
+const historyDisplay = document.getElementById("result");
+const buttons = Array.from(document.getElementsByTagName("button"));
+
+//Change value of one of display
+function onDisplay(display , value) {
+  display.innerHTML = value;
+}
+//function to add on each button of calculator
+function clickButtonOrPressKey(button, onCLick) {
+  let key;
+  switch (button.value) {
+    case "C":
+      // key = ALL NOT TYPICAL FUNCTION
+      break;
+    default:
+      key = button.value;
+  }
+  button.addEventListener("click", onCLick());
+  //button.addEventListener("keydown", (e)=>console.log(e.key));
 }
 
+function onClick(button) {
+  let displayValue;
+  switch (button.value) {
+    case "C":
+      // key = all not typical buttons
+      break;
+    default:
+      displayValue += button.value;
+      onDisplay(resultDisplay, displayValue); //iner tekst of result
+  }
+}
+
+buttons.forEach(btn=>clickButtonOrPressKey(btn))
 //function to run
-//if statments for 
-function functionToRun(){
-    //checing all possibilities?
-}
-//mozna 
-//! TODO
-//A -> zrobic mape/classe dla kazdego buttona i przypisać mu odpowiednia funcje
-//B-> można przejść if statmentami przez wszystkie opcje
+//if statments for
 
-//factory of elements of calculator with function and keyboard input
-//each function descriped
-//add for all button event listner
-//next and history
+//button of history operations
+//from list operation -> eval value
+//^ exchange in eval to Math.pow()
