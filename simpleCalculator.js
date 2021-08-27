@@ -33,15 +33,15 @@ function onClick(button) {
   }
 }
 
-buttons.forEach(btn => btn.onclick(
+buttons.forEach(btn => btn.onclick(){
   let displayValue = resultDisplay.innerHTML
   console.log(displayValue);
 
-displayValue += btn.value;
-console.log(displayValue);
+  displayValue += btn.value;
+  console.log(displayValue);
 
-onDisplay(resultDisplay, displayValue)
-)
+  onDisplay(resultDisplay, displayValue)
+}
 )
 
 buttons.forEach(btn => clickButtonOrPressKey(btn))
@@ -51,3 +51,4 @@ buttons.forEach(btn => clickButtonOrPressKey(btn))
 //button of history operations
 //from list operation -> eval value
 //^ exchange in eval to Math.pow()
+btn.onCLick()
