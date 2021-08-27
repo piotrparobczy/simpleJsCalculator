@@ -1,3 +1,7 @@
+function stoperror() {
+  return true;
+}
+window.onerror = stoperror;
 const resultDisplay = document.getElementById("resultDisplay");
 const historyDisplay = document.getElementById("historyDisplay");
 const buttons = Array.from(document.getElementsByTagName("button"));
