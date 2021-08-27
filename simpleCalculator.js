@@ -1,11 +1,15 @@
-const resultDisplay = document.getElementById("result");
-const historyDisplay = document.getElementById("result");
+const resultDisplay = document.getElementById("resultDisplay");
+const historyDisplay = document.getElementById("historyDisplay");
 const buttons = Array.from(document.getElementsByTagName("button"));
 
 //Change value of one of display
 function onDisplay(display , value) {
   display.innerHTML = value;
 }
+
+//test
+onDisplay(resultDisplay,'test')
+
 //function to add on each button of calculator
 function clickButtonOrPressKey(button, onCLick) {
   let key;
