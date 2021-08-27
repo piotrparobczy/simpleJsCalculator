@@ -35,7 +35,11 @@ function onClick(button) {
 
 buttons.forEach(btn=>btn.onclick(
   let displayValue = resultDisplay.innerHTML
+  console.log(displayValue);
+
   displayValue += btn.value;
+  console.log(displayValue);
+  
   onDisplay(resultDisplay,displayValue)
 )
 
