@@ -28,7 +28,7 @@ function onClick(button) {
       // key = all not typical buttons
       break;
     default:
-      displayValue += button.value;
+      displayValue += button.innerHTML;
       onDisplay(resultDisplay, displayValue); //iner tekst of result
   }
 }
