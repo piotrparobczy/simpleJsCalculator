@@ -7,48 +7,5 @@ function onDisplay(display, value) {
   display.innerHTML = value;
 }
 
-//function to add on each button of calculator
-function clickButtonOrPressKey(button, onCLick) {
-  let key;
-  switch (button.value) {
-    case "C":
-      // key = ALL NOT TYPICAL FUNCTION
-      break;
-    default:
-      key = button.value;
-  }
-  button.addEventListener("click", onCLick());
-  //button.addEventListener("keydown", (e)=>console.log(e.key));
-}
-
-function onClick(button) {
-  let displayValue;
-  switch (button.value) {
-    case "C":
-      // key = all not typical buttons
-      break;
-    default:
-      displayValue += button.innerHTML;
-      onDisplay(resultDisplay, displayValue); //iner tekst of result
-  }
-}
-
-buttons.forEach(btn => btn.onclick(){
-  let displayValue = resultDisplay.innerHTML
-  console.log(displayValue);
-
-  displayValue += btn.value;
-  console.log(displayValue);
-
-  onDisplay(resultDisplay, displayValue)
-}
-)
-
-buttons.forEach(btn => clickButtonOrPressKey(btn))
-//function to run
-//if statments for
-
-//button of history operations
-//from list operation -> eval value
-//^ exchange in eval to Math.pow()
-btn.onCLick()
+console.log(resultDisplay.innerHTML);
+buttons.forEach(btn=>console.log(btn.innerHTML);)
