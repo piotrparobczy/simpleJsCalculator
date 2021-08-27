@@ -1,7 +1,3 @@
-function stoperror() {
-  return true;
-}
-window.onerror = stoperror;
 const resultDisplay = document.getElementById("resultDisplay");
 const historyDisplay = document.getElementById("historyDisplay");
 const buttons = Array.from(document.getElementsByTagName("button"));
@@ -12,4 +8,4 @@ function onDisplay(display, value) {
 }
 
 console.log(resultDisplay.innerHTML);
-buttons.forEach(btn=>console.log(btn.innerHTML);)
+buttons.forEach(btn=>console.log(btn.innerHTML))
