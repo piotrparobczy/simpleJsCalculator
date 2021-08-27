@@ -3,7 +3,7 @@ const historyDisplay = document.getElementById("historyDisplay");
 const buttons = Array.from(document.getElementsByTagName("button"));
 
 //Change value of one of display
-function onDisplay(display , value) {
+function onDisplay(display, value) {
   display.innerHTML = value;
 }
 
@@ -33,17 +33,18 @@ function onClick(button) {
   }
 }
 
-buttons.forEach(btn=>btn.onclick(
+buttons.forEach(btn => btn.onclick(
   let displayValue = resultDisplay.innerHTML
   console.log(displayValue);
 
-  displayValue += btn.value;
-  console.log(displayValue);
-  
-  onDisplay(resultDisplay,displayValue)
+displayValue += btn.value;
+console.log(displayValue);
+
+onDisplay(resultDisplay, displayValue)
+)
 )
 
-buttons.forEach(btn=>clickButtonOrPressKey(btn))
+buttons.forEach(btn => clickButtonOrPressKey(btn))
 //function to run
 //if statments for
 
