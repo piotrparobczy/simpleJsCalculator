@@ -7,9 +7,6 @@ function onDisplay(display , value) {
   display.innerHTML = value;
 }
 
-//test
-onDisplay(resultDisplay,'test')
-
 //function to add on each button of calculator
 function clickButtonOrPressKey(button, onCLick) {
   let key;
@@ -35,6 +32,12 @@ function onClick(button) {
       onDisplay(resultDisplay, displayValue); //iner tekst of result
   }
 }
+
+buttons.forEach(btn=>btn.onclick(
+  let displayValue = resultDisplay.innerHTML
+  displayValue += btn.value;
+  onDisplay(resultDisplay,displayValue)
+)
 
 buttons.forEach(btn=>clickButtonOrPressKey(btn))
 //function to run
